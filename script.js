@@ -9,7 +9,7 @@ function showPhoto() {
     <div class="screen fade">
         <h1>🖤 Charik</h1>
 
-        <img src="charik.jpg"
+        <img src="charik.png"
              style="
              width:250px;
              height:420px;
