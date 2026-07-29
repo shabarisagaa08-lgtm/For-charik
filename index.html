@@ -1,101 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For Charik 🖤</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#000;
-overflow:hidden;
-color:white;
-}
-
-.page{
-width:100%;
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:25px;
-text-align:center;
-animation:fade 1s;
-}
-
-h1{
-font-size:36px;
-color:#ff2d75;
-margin-bottom:15px;
-}
-
-p{
-font-size:18px;
-line-height:28px;
-max-width:350px;
-}
-
-button{
-margin-top:40px;
-padding:15px 40px;
-font-size:18px;
-border:none;
-border-radius:50px;
-background:#ff2d75;
-color:white;
-}
-
-@keyframes fade{
-from{opacity:0;}
-to{opacity:1;}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="page" id="page1">
+<div id="app">
+
+<div class="screen fade">
 
 <h1>🖤 For Charik</h1>
 
 <p>
-Hi Charik...
-<br><br>
+Hi Charik,<br><br>
 I made something special just for you.
-Every word comes from my heart.
+Every page comes from my heart.
 </p>
 
-<button onclick="next()">Begin ❤️</button>
+<button class="btn" onclick="startJourney()">
+Begin ❤️
+</button>
 
 </div>
 
-<script>
+</div>
 
-function next(){
-
-document.getElementById("page1").innerHTML=
-
-`
-<h1>📷 Your Photo</h1>
-
-<p>
-(We'll add your beautiful photo here next.)
-</p>
-
-<button onclick="alert('Next part coming soon ❤️')">Next</button>
-
-`;
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
